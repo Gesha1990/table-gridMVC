@@ -1,0 +1,86 @@
+
+body{
+	font-family: sans-serif;
+	background: rgb(231, 229, 229);
+	font-family: 'Indie Flower', cursive, 'Consolas', Arial, Helvetica, sans-serif;
+	color: rgb(1, 141, 255);
+	font-size: 25px;
+	font-weight: 800;
+	
+}
+main{
+	width: 100%;
+	max-width: 800px;
+	height: fit-content;
+	margin: 0 auto;
+	background: url(img/vintage.jpg) no-repeat;
+	padding:20px;
+	position: relative;
+}
+table{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+	width: 100%;
+	word-break: break-word;
+}
+td, th{
+    border: 1px solid #cccccc;
+    padding: 8px;
+
+}
+@media screen and (max-width: 700px) {
+	td, th{
+		padding: 0;
+		font-size: 12px;
+		font-weight: normal;
+		word-wrap: break-word;
+	}
+}
+th{
+    font-weight: bold;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+td{
+	color: yellow;
+	font-size: 12px;
+	cursor: pointer;
+}
+.modal-window{
+	display: none;
+}
+.modal-window.active{
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+
+.modal-window__content{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+background-color: white;
+padding: 0 15px 15px 15px;
+}
+@media screen and (max-width: 700px) {
+	.modal-window__content{
+		font-size: 12px;
+	}
+}
+.modal-window__content-header{
+	display: flex;
+	justify-content: flex-end;
+	
+}
+.close{
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	margin-right: -10px;
+}
